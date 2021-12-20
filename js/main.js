@@ -257,12 +257,12 @@ document.getElementById("btnInNt").onclick = function () {
     while(i<n){
         i++;
         var count = 0;
-        var j = 0;
-        while(j<i){
+        var j = 1;
+        while(j<i/2){
             j++;
             if(i%j==0) count++;    
         }
-        if(count<=2) content+=i+" ";
+        if(count==0) content+=i+" ";
     }
     document.getElementById("txtInNT").innerHTML ="👉 " +content;
 }
